@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark mb-4">
+            <a class="navbar-brand" href="index.html">
+               <h1 class="display2 mr-4 pl-2">nBlog</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li nav="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <main class="col-md-9">
+                <article>
+                    <img class="img-fluid w-100" src="images/sadface.jpg" alt="sad looking dog" />
+                    <div class="pl-2">
+                            <h1 class="mt-1">Dog Rescue Intake Idea</h1>
+                            <p>Since this class that I have been taking started, I have been toying around with the idea of creating a Dog Rescue Intake site for a practice project.  The site would
+                                essentially be used as a way to enter dogs into a database for a rescue organization.  I don't currently have all the knowledge necessary 
+                            for creating this, but I have enough to get started.  I can continue to update as I progress in class.   </p>
+                    </div>
+                    <form  class="p-4" action="http://formreflector.azurewebsites.net/form-reflector/ " method="post">
+                        <fieldset>
+                            <legend>Enter New Dog Information</legend>
+                        <div class="form-group mb-2">
+                            <label for="name">Name:</label>
+                            <input class="form-control" type="text" id="name" name="user-name" >
+                        </div>
+                        <div class="form-group mb-2">
+                            <label for"id-number">ID:</label>
+                            <input class="form-control" type="text" id="id-number" name="dog-id">
+                        </div>
+                        <div class="form-group mb-2">
+                            <label for="breed">Breed:</label>
+                            <input class="form-control" type="text" id="breed" name="dog-breed" >
+                        </div>
+                        <div class="form-group mb-2">
+                                <label for="color">Color:</label>
+                                <input class="form-control" type="text" id="color" name="dog-color" >
+                            </div>
+                        <div class="form-group">
+                            <label for="in-date">Intake Date:</label>
+                            <input type="date" class="form-control" id="in-date" name="intake-date"></textarea>
+                        </div>
+                        <div>
+                            <p>
+                            <label for="sex-Male">Male</label>
+                            <input type="radio" id="sex-Male" name="sex" value="male">
+                            <label for="sex-Female">Female</label>
+                            <input type="radio" id="sex-Female" name="sex" value="female">
+                            </p>
+                        </div>
+                        <div>
+                  <!--          <button class="btn btn-dark" type="submit">Add Dog</button> -->
+                            <button class="btn btn-dark" id="add-dog" type="button">Add Dog</button>
+                            
+                        </div>
+                        
+                    </fieldset>
+                    </form>
+                    <div class="card" style="width: 20rem;">
+                            <div class="card-body">
+                              <h4 class="card-title" id="c-dog-id">Dog ID</h4>
+                              <h6 class="card-subtitle mb-2 text-muted" id="c-dog-name">Dog Name</h6>
+                              <ul class="list-group list-group-flush">
+                                    <li class="list-group-item" id="c-dog-age">Dog Age</li>
+                                    <li class="list-group-item" id="c-dog-breed">Dog Breed</li>
+                                    <li class="list-group-item" id="c-dog-sex">Dog Sex</li>
+                                    <li class="list-group-item" id="c-dog-color">Dog Color</li>
+                                    <li class="list-group-item" id="c-dog-date">Date</li>                                    
+                                  </ul>
+                            </div>
+                          </div>
+                </article>
+            </main>
+            <aside class="col-md-3">
+                <div class="card w-100 mb-5">
+                    <div class="card-header bg-dark text-light">Blog Posts</div>
+
+                    <nav class="nav flex-column">
+                            <a class="nav-link" href="iQuit.html">I Quit!</a>
+                            <a class="nav-link" href="addSound.html">Let's Make Some Noise!</a>
+                            <a class="nav-link" href="formatLinks.html">Basic Formatting of Links</a>
+                    </nav>
+                </div>
+                <div class="card w-100">
+                    <div class="card-header bg-dark text-light">Random Links</div>
+
+                    <nav class="nav flex-column">
+                        
+                            <a class="nav-link" href="http://jeffa.tech">Jeff Ammons - coding guru</a>
+                            <a class="nav-link" href="http://codecareeracademy.com">Code Career Academy</a>
+                            <a class="nav-link" href="http://petfinder.com">Find a new buddy!</a>
+                            <a class="nav-link" href="http://atlutd.com">Check out the latest <strong>Atlanta United</strong> news!</a>
+                        
+                    </nav>
+                </div>
+         
+            </aside>
+        </div>
+    </div>
+    <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center mt-2">
+              <li class="page-item">
+                <a class="page-link" href="formatLinks.html" tabindex="-1">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="iQuit.html">1</a></li>
+              <li class="page-item"><a class="page-link" href="addSound.html">2</a></li>
+              <li class="page-item"><a class="page-link" href="formatLinks.html">3</a></li>
+              <li class="page-item active"><a class="page-link" href="rescue1.html">4</a></li>
+              <li class="page-item disabled">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+
+
+    <footer class="mt-4 ml-4">Footer McFooty Face</footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="js/rescue1.js"></script>
+</body>
+
+</html>
